@@ -1,0 +1,51 @@
+<section class="head-section">
+  <div class="head-container">
+    {% if module.head_section.Label %}
+      <p class="head-label">
+        {{ module.head_section.Label }}
+      </p>
+    {% endif %}
+    
+     {% if module.head_section.head_title %}
+      <h1 class="head-title">
+        {{ module.head_section.head_title }}
+      </h1>
+    {% endif %}
+    {% if module.head_section.head_body %}
+      <p class="head-text">
+        {{ module.head_section.head_body }}
+      </p>
+    {% endif %}
+    {% if module.head_section.Label %}
+      <button class="head-button">
+        {{ module.head_section.head_button.head_button_text }} <img alt="button-arrow" src="{{ module.head_section.head_button.buttonimage.src }}" />
+      </button>
+    {% endif %}
+  </div>
+</section>
+
+<section class="image-box-container">
+  <div class="image-box" style="background-image: linear-gradient(0deg, #141414 0%, rgba(20, 20, 20, 0) 100%), url({{ module.cta_section.box_1.image_box_1.src }});">
+    <div class="image-box-text-container">
+      <h3 class="image-box-title">
+        {{ module.cta_section.box_1.box_1_text }}
+      </h3>
+      <p class="image-box-text">
+        {{ module.cta_section.box_1.text_box_1 }}
+      </p>
+    </div>
+    <a href="#" class="image-box-button"><img alt="button-arrow" src="{{ module.cta_section.box_1.image_field.src }}" /></a>
+  </div>
+
+  <a class="image-box" style="background-image: linear-gradient(0deg, #141414 0%, rgba(20, 20, 20, 0) 100%), url({{ module.cta_section.box_2.image_box_2.src }})">
+    <div class="image-box-text-container">
+      <h3 class="image-box-title">
+        {{ module.cta_section.box_2.box_2_title }}
+      </h3>
+      <p class="image-box-text">
+        {{ module.cta_section.box_2.box_2_text }}
+      </p>
+    </div>
+    <div href="#" class="image-box-button"><img alt="button-arrow" src="{{ module.cta_section.box_2.image_button.src }}" /></div>
+  </a>
+</section>

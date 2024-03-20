@@ -1,0 +1,235 @@
+
+
+.head-section{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  margin: 48px 20px 0;
+}
+
+.head-label{
+  font-family: TT Commons Pro;
+  letter-spacing: 0.02em;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 0 8px;
+}
+
+.head-title{
+  font-family: TT Commons Pro;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+}
+
+.head-title span{
+  font-family: GT Alpina;
+  font-weight: 300;
+  font-size: 38px;
+  float: none !important;
+  display: contents !important;
+}
+
+.head-text{
+  font-family: TT Commons Pro;
+  font-weight: 450;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 16px 0;
+}
+
+.head-button{
+  font-family: TT Commons Pro;
+  font-size: 17px;
+  font-weight: 450;
+  line-height: 24px;
+  text-align: left;
+
+  width: auto;
+  height: 24px;
+  align-self: center;
+  border: none;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  color: #BF564D;
+  background-color: transparent;
+}
+
+.head-button:hover{
+  color:rgba(166,67,58, 1)
+}
+
+.image-box-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin: 32px 20px 64px;
+  gap: 24px;
+}
+
+.image-box {
+    width: 100%;
+    height: 252px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    padding: 0 16px 24px;
+  }
+
+.image-box:hover .image-box-button {
+    border: 2px #d3d3d39e solid;
+  }
+
+.image-box-text-container{
+  display: flex;
+  flex-direction: column;
+}
+
+  .image-box-title {
+    font-family: TT Commons Pro;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin: 0;
+    color: #fff;
+  }
+
+  .image-box-text{
+    font-family: TT Commons Pro;
+    font-size: 17px;
+    font-weight: 450;
+    line-height: 24px;
+    text-align: left;
+    margin: 0;
+    color: #FAFAFA;
+  }
+
+  .image-box-button:hover {
+    border: 2px #FAFAFA solid;
+  }
+
+  .image-box-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 56px;
+    min-height: 56px;
+    margin-left: 16px;
+    gap: 4px;
+    border-radius: 4px;
+    border: 2px rgba(255, 255, 255, 0.3) solid;
+  }
+
+@media only screen and (min-width: 768px) {
+  .head-container{
+    width: 597px;
+    margin-top: 64px;
+  }
+  
+  .head-label{
+    font-size: 15px;
+  }
+
+  .head-title{
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .head-title span{
+    font-size: 42px;
+  }
+  
+  .head-text{
+    font-size: 19px;
+    margin: 24px 0;
+  }
+  
+  .head-button{
+      font-size: 19px;
+  }
+  
+  .image-box-container{
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 48px 64px 96px;
+    gap: 16px
+  }
+  
+  .image-box {
+    width: 100%;
+    min-height: 468px;
+    padding: 0 24px 32px;
+  }
+  
+  .image-box-title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  
+  .image-box-text{
+    font-size: 19px;
+  }
+}
+
+@media only screen and (min-width: 1260px) {
+  .head-container{
+    width: 864px;
+    margin-top: 64px;
+  }
+  
+  .head-label{
+    font-size: 15px;
+  }
+
+  .head-title{
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .head-title span{
+    font-size: 42px;
+  }
+  
+  .head-text{
+    font-size: 19px;
+    margin: 24px 0;
+  }
+  
+  .head-button{
+      font-size: 19px;
+  }
+  
+  .image-box-container{
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    margin: 80px 64px 96px;
+    gap: 24px
+  }
+  
+  .image-box {
+    height: 515px;
+    padding: 0 24px 32px;
+  }
+}
